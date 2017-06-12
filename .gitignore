@@ -1,0 +1,11 @@
+*.userprefs
+bin/*
+obj/*
+*bin/*
+*obj/*
+*bin/
+*obj/
+bin/
+obj/
+!nunit.framework.dll
+*npm-debug.log
