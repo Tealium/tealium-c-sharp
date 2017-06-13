@@ -1,0 +1,5 @@
+/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Tests/obj/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Tests/bin/Release/Tests.dll
+/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Tests/obj/Release/Tests.dll
+/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Tests/bin/Release/nunit.framework.dll
+/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Tests/bin/Release/tealiumcsharp.dll

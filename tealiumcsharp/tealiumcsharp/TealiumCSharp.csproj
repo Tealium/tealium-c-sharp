@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93AE41B3-28F0-4E72-BAAA-BA3410741BED}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>tealiumcsharp</RootNamespace>
+    <AssemblyName>tealiumcsharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tealium\Core\Tealium.cs" />
+    <Compile Include="Tealium\Core\Config.cs" />
+    <Compile Include="Tealium\Core\Module.cs" />
+    <Compile Include="Tealium\Core\ModulesManager.cs" />
+    <Compile Include="Tealium\Core\Constants.cs" />
+    <Compile Include="Tealium\Collect\Collect.cs" />
+    <Compile Include="Tealium\Collect\CollectConstants.cs" />
+    <Compile Include="Tealium\Collect\CollectModule.cs" />
+    <Compile Include="Tealium\Logger\LoggerModule.cs" />
+    <Compile Include="Tealium\AppData\AppData.cs" />
+    <Compile Include="Tealium\AppData\AppDataModule.cs" />
+    <Compile Include="Tealium\AppData\AppDataConstants.cs" />
+    <Compile Include="Tealium\Core\Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tealium\" />
+    <Folder Include="Tealium\Core\" />
+    <Folder Include="Tealium\Collect\" />
+    <Folder Include="Tealium\Logger\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>
