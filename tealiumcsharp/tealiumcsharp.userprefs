@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{B409E7F8-7740-46D1-B9C6-75103062937D}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="tealiumcsharp/Tealium/AppData/AppDataConstants.cs">
+    <Files>
+      <File FileName="tealiumcsharp/Tealium/Core/Tealium.cs" Line="58" Column="53" />
+      <File FileName="tealiumcsharp/Tealium/Core/ModulesManager.cs" Line="72" Column="25" />
+      <File FileName="tealiumcsharp/Tealium/Collect/Collect.cs" Line="43" Column="36" />
+      <File FileName="Sample/Program.cs" Line="24" Column="57" />
+      <File FileName="Tests/TestsTealiumModule.cs" Line="27" Column="21" />
+      <File FileName="tealiumcsharp/Tealium/Core/Module.cs" Line="22" Column="8" />
+      <File FileName="tealiumcsharp/Tealium/Collect/CollectModule.cs" Line="37" Column="30" />
+      <File FileName="tealiumcsharp/Tealium/Core/Config.cs" Line="69" Column="24" />
+      <File FileName="tealiumcsharp/Tealium/Core/Constants.cs" Line="28" Column="18" />
+      <File FileName="tealiumcsharp/Tealium/AppData/AppDataModule.cs" Line="55" Column="36" />
+      <File FileName="Tests/TestsTealium.cs" Line="1" Column="1" />
+      <File FileName="Tests/TestsHelper.cs" Line="1" Column="1" />
+      <File FileName="tealiumcsharp/Tealium/Collect/CollectConstants.cs" Line="1" Column="1" />
+      <File FileName="tealiumcsharp/Tealium/AppData/AppDataConstants.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Sample PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
