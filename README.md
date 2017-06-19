@@ -1,8 +1,9 @@
 ## Tealium Mobile Library for C#
 This guide shows how to add, configure, and track events for a C# application utilizing the Tealium C# Integration library.
 
+## Built-in Data Layer
 This library populates the following event attributes for mapping:
-### Tealium Data
+
 **Event Attribute**  | **Description** | **Sample** | **Type**
 ------------- | ------------------------- | ------------ | -------------
 tealium_account | Tealium account name used to initalize library | "Tealium" | string
