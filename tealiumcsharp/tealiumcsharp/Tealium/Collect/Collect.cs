@@ -47,7 +47,7 @@ namespace TealiumCSharp
 			Send(parameters, callback);
 		}
 
-		internal void Send(string stringParams, Action<Exception> callback)
+		internal async void Send(string stringParams, Action<Exception> callback)
 		{
 			Debug.WriteLine("Collect.cs -- SEND METHOD");
 
@@ -58,23 +58,23 @@ namespace TealiumCSharp
 				if (Config.OverrideCollectUrl == null)
 				{
 					client.BaseAddress = new Uri(BaseURL);
-					//i.gif must be added outside base url - per c# implementation
-					response = client.GetAsync("i.gif?" + stringParams).Result;
+                    //i.gif must be added outside base url - per c# implementation
+                    response = await client.GetAsync("i.gif?" + stringParams);
 				}
 				else
 				{
 					client.BaseAddress = new Uri(Config.OverrideCollectUrl);
 					if (Config.OverrideCollectUrl.Contains("?"))
 					{
-						response = client.GetAsync(stringParams).Result;
+                        response = await client.GetAsync(stringParams);
 					}
 					else
 					{
-						response = client.GetAsync("?" + stringParams).Result;
+                        response = await client.GetAsync("?" + stringParams);
 					}
 				}
 
-				string result = response.Content.ReadAsStringAsync().Result;
+                string result = await response.Content.ReadAsStringAsync();
 
 				IEnumerable<string> values;
 				string str = string.Empty;
