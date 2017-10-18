@@ -1,5 +1,0 @@
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/tealiumcsharp/bin/Debug/tealiumcsharp.dll
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/tealiumcsharp/bin/Debug/tealiumcsharp.pdb
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/tealiumcsharp/obj/Debug/tealiumcsharp.csproj.CoreCompileInputs.cache
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/tealiumcsharp/obj/Debug/tealiumcsharp.dll
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/tealiumcsharp/obj/Debug/tealiumcsharp.pdb
