@@ -48,6 +48,7 @@ Once the Tealium for C# is installed you are ready to start coding. Use the foll
 - datasourceId - (Optional) Datasource ID provided by Universal Data Hub (UDH) setup.
 - overrideCollectUrl - (Optional) Custom collect URL.
 - optionalData - (Optional) Dictionary for module use. Null acceptable. 
+- method - (Optional) HTTP Method for the Collect Endpoint
 
 ```csharp
 // SAMPLE
@@ -58,7 +59,8 @@ Config config = new Config("account",
                            new string[] { <ModuleNames> },
                            "datasouceId", 
                            "overrideCollectUrl",
-                           new Dictionary<string, object> optionalData);
+                           new Dictionary<string, object> optionalData,
+                           Method.POST);
 
 Tealium tealium = new Tealium(config);
 ```
@@ -109,7 +111,8 @@ public Config (string account,
                string[] modules = null,
                string datasource = null,
                string overrideCollectUrl = null,
-               Dictionary<string, object> optionalData = null)
+               Dictionary<string, object> optionalData = null,
+               Method method = Method.POST)
 ```
 
 **Parameters**  | **Description** | **Example Value**
@@ -122,7 +125,7 @@ modules | Optional modules to be initialed with library | See [Available Modules
 datasource | Optional datasource ID provided by Universal Data Hub (UDH) setup | abc123
 overrideCollectUrl | Optional custom collect URL | - 
 optionalData | Optional dictionary<string, object> for module use. Null acceptable. Value not typically needed for most setups | -
-
+method | Optional HTTP method, POST or GET, to determine how to send the data to the Collect Endpoint | Method.POST, Method.GET
 ```csharp
 //Sample
 Config config = new Config("account", 
@@ -134,7 +137,8 @@ Config config = new Config("account",
                                            LoggerModule.Name },
                            "datasouceId", 
                            "http://overrideCollectUrl.com/",
-                           new Dictionary<string, object> optionalData);
+                           new Dictionary<string, object> optionalData,
+                           Method.POST);
 ```
 
 NOTE: The config object has a *modules* string[] property that must be populated with the string representations of each module desired to use with library. See the [Available Modules](#available-modules) section.
@@ -219,6 +223,36 @@ successful | Bool status if the track call could be delivered | true
 info | Dictionary<string, object> containing track and response data | -
 error | Optional error from any dispatch services encountering a delivery or response issue | -
 
+
+## JoinTrace()
+Joins a Trace using the supplied Id. The `tealium_trace_id` will be present in all future Track calls until the LeaveTrace() method is called.
+
+```csharp
+//Sample
+tealium.JoinTrace("01234");
+```
+
+**Parameters**  | **Description** | **Example Value**
+------------- | ------------- | ------------------
+traceId | Required string identifying the trace to join | "12345"
+
+## LeaveTrace()
+Leaves a trace if one has been joined. The `tealium_trace_id` will no longer be populated automatically on future events.
+
+```csharp
+//Sample
+tealium.LeaveTrace();
+```
+
+## KillTraceSession()
+Sends an additional event to Tealium to end the visitor session at the server. This is useful for testing end-of-visit configuration.
+Also calls LeaveTrace() to stop any more events being sent with the previous trace id.
+
+```csharp
+//Sample
+tealium.KillTraceSession();
+```
+
 ### Available Modules
 The following string values can be used to enable modules with the current build.
 
@@ -245,6 +279,10 @@ NOTE: Use the .Name constant of each Module class.
 * If you have **account specific questions** please contact your Tealium account manager
 
 # Change Log
+- 1.1.0 Event Endpoint
+  - Support for sending data to the /event endpoint via both POST and GET methods
+  - Extra methods for joining/leaving traces added
+  - Fix: OptionalData supplied wasn't being sent
 - 1.0.0 Initial Release
 
 
@@ -253,4 +291,4 @@ Use of this software is subject to the terms and conditions of the license agree
 
 
 ---
-Copyright (C) 2012-2017, Tealium Inc.
+Copyright (C) 2012-2019, Tealium Inc.
