@@ -20,6 +20,8 @@ namespace TealiumCSharp
         public const string LIBRARY_NAME_VALUE = "csharp";
         public const string LIBRARY_VERSION_VALUE = "1.0";
 
+        public const string TRACE_ID = "tealium_trace_id";
+
         public static readonly string[] DEFAULT_MODULES = {"TealiumCSharp.AppDataModule",
                                                     "TealiumCSharp.CollectModule",
                                                     "TealiumCSharp.LoggerModule" };
@@ -73,8 +75,4 @@ namespace TealiumCSharp
 
         }
     }
-
-
-
-
 }
