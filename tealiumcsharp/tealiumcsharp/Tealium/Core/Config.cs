@@ -89,11 +89,6 @@ namespace TealiumCSharp
             {
                 throw new ArgumentNullException(nameof(profile));
             }
-            if (visitorId == null)
-            {
-                // no longer a requirement for the /event endpoint
-                //throw new ArgumentNullException(nameof(visitorId));
-            }
             if (modules == null)
             {
                 modules = Constants.DEFAULT_MODULES;
