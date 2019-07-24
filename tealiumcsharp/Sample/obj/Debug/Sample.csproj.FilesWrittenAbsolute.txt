@@ -1,9 +1,0 @@
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Sample/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Sample/bin/Debug/Sample.exe.mdb
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Sample/bin/Debug/Sample.exe
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Sample/obj/Debug/Sample.exe
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Sample/obj/Debug/Sample.exe.mdb
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Sample/bin/Debug/tealiumcsharp.dll
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Sample/bin/Debug/tealiumcsharp.dll.mdb
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Sample/bin/Debug/Sample.pdb
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/Sample/obj/Debug/Sample.pdb

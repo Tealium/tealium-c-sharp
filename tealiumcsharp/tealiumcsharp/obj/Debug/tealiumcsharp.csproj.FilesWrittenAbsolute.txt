@@ -1,5 +1,0 @@
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/tealiumcsharp/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/tealiumcsharp/bin/Debug/tealiumcsharp.dll.mdb
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/tealiumcsharp/bin/Debug/tealiumcsharp.dll
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/tealiumcsharp/obj/Debug/tealiumcsharp.dll
-/Users/karentamayo/Documents/Repos/tamayok/tealium-c-sharp/tealiumcsharp/tealiumcsharp/obj/Debug/tealiumcsharp.dll.mdb
